@@ -1,0 +1,35 @@
+.index-menu {
+  width: 100%;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.index-menu-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+  margin-top: 10rpx;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  margin-bottom: -1rpx;
+}
+
+.index-menu-item image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.index-menu-item text {
+  display: block;
+  font-size: 28rpx;
+  padding-top: 14rpx;
+  white-space: nowrap;
+}
+
+swiper {
+  height: 200px
+}

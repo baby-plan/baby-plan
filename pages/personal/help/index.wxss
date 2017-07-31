@@ -1,0 +1,4 @@
+picker{
+  flex:1;
+  padding-left:40rpx;
+}

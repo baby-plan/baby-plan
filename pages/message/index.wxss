@@ -1,0 +1,7 @@
+.aui-tab-item {
+  width: 50%;
+}
+
+scroll-view {
+  background-color: #fff;
+}

@@ -1,0 +1,26 @@
+<view class="aui-chat">
+  <block wx:for-items="{{message.contents}}" wx:key="{{content}}" wx:for-item="content">
+    <!-- 处理日期 -->
+    <view wx:if="{{content.date}}" class="aui-chat-header">{{content.date}}</view>
+    <!-- 处理聊天对象 -->
+    <view class="aui-chat-item {{content.self?'aui-chat-right':'aui-chat-left'}} ">
+      <view class="aui-chat-media">
+        <image src="{{content.contact.img}}" />
+      </view>
+      <view class="aui-chat-inner">
+        <view class="aui-chat-name">
+          {{content.contact.name}}
+          <span wx:if="{{content.contact.identity}}" class="aui-label aui-label-warning">
+            {{content.contact.identity.name}}
+          </span>
+        </view>
+        <view class="aui-chat-content">
+          <view class="aui-chat-arrow"></view>
+          <image wx:if="{{content.img}}" src="{{content.img}}" data-src="{{content.img}}" bindtap="onPreview" />
+          <text wx:else>{{content.content}}</text>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</view>

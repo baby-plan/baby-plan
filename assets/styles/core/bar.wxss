@@ -1,0 +1,93 @@
+/*底部切换栏*/
+
+.aui-footbar {
+  height: 52px !important;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  table-layout: fixed;
+  background-color: #eee;
+}
+
+.aui-footbar-item {
+  display: table-cell;
+  position: relative;
+  width: 1%;
+  height: 52px !important;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 25rpx;
+  vertical-align: middle;
+  color:#545454;
+}
+
+.aui-footbar-item.aui-active {
+  background-color: #FF8A57;
+  color: #ffffff;
+}
+
+.aui-footbar-item>image {
+  width: 40px;
+  height: 40px;
+  margin-right: 5rpx;
+}
+
+.search-flex {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1rpx solid #ddd;
+  position: relative;
+  z-index: 13;
+  background: #f9f9f9;
+  margin-top: 0;
+  transition: all 0.3s;
+  height: 50px;
+}
+
+.search-flex.tophide {
+  margin-top: -50px;
+}
+
+.search-btn {
+  background: transparent;
+  color: #545454;
+  line-height: 72rpx;
+  height: 72rpx;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+}
+
+.search-btn::after {
+  border: none;
+}
+
+.search-btn.hide {
+  margin-right: -62.5px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  border-radius: 6rpx;
+}
+
+.search-bar input {
+  flex: 1;
+  height: 72rpx;
+  line-height: 72rpx;
+  padding: 0 0 0 30rpx;
+  border-radius: 30rpx;
+  background: #fff;
+  border: 1rpx solid #e8e8e8;
+  margin: 0 20rpx 0 0;
+}
+
+.search-extra-btn {
+  margin-left: 20rpx;
+  white-space: nowrap;
+}
